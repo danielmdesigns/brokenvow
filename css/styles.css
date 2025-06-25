@@ -126,7 +126,7 @@ nav > ul > li {
   text-align: left; }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 20px;
   color: #FFFFFF;
   line-height: 1.5;
   font-weight: 400;
@@ -136,7 +136,8 @@ h1 {
   margin: 0 auto; }
   @media screen and (min-width: 760px) {
     h1 {
-      text-align: center; } }
+      text-align: center;
+      font-size: 1.75rem; } }
 
 h2 {
   color: #FFFFFF;
