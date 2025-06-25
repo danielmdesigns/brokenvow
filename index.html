@@ -64,34 +64,20 @@
   </head>
 
   <body>
-    <div class="container">
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">VISUALS</a>
-          </li>
-          <li>
-            <a href="https://deathclaw.bigcartel.com/" target="_blank"
-              >SHOP</a
-            >
-          </li>
-          <li>
-            <a href="history.html">HISTORY</a>
-          </li>
-          <li>
-            <a
-              href="mailto:danielwmaldonado@gmail.com?Subject=Project%20Design%20Inqury"
-              >CONTACT</a
-            >
-          </li>
-        </ul>
-        <div class="toggle">MENU</div>
-      </nav>
-      <img class="logo" src="img/deathclaw_logo.png" alt="" />
-    </div>
+    <nav>
+      <div class="logo">Broken Vow<span class="dot">.</span></div>
+      <div class="menu-toggle" onclick="toggleMenu()">MENU</div>
+      <div class="nav-links" id="nav-links">
+        <a href="#visuals">Visuals</a>
+        <a href="#noise">Noise</a>
+        <a href="#memoir">Memoir</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#speak">Speak</a>
+      </div>
+    </nav>
 
     <h1>
-      The abstract, experimental & limited edition artwork of Daniel Maldonado.
+      Broken Vow is the abstract, experimental & limited edition artwork of Daniel Maldonado.
 Record design, layout, typography, merchandise and art direction.
     </h1>
 
@@ -504,9 +490,10 @@ Record design, layout, typography, merchandise and art direction.
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-      $(".resToggle").click(function () {
-        $(".the-nav").toggleClass("active");
-      });
+      function toggleMenu() {
+      const menu = document.getElementById('nav-links');
+      menu.classList.toggle('show');
+    }
     </script>
   </body>
 </html>
