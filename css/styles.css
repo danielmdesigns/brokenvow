@@ -71,6 +71,14 @@ h2 {
   font-weight: 600;
   margin-bottom: 1rem; }
 
+.btn-group{
+  display: block;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+@media screen and (min-width: 760px) {
+  .btn-group {
+    margin-bottom: 4rem; } }
 .btn {
   font-weight: 600;
   font-size: 1rem;
@@ -80,19 +88,23 @@ h2 {
   padding: 20px;
   text-align: center;
   cursor: pointer;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   width: 100%;
+  margin: 0.5rem auto;
   -webkit-transition: background 0.3s ease-in-out;
   -o-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-  margin: 4rem auto; }
+  } 
   .btn:hover {
     background-color: #796654; }
   @media screen and (min-width: 760px) {
     .btn {
       width: 300px;
-      margin: 6rem auto 8rem; } }
+      margin-right: 1rem;}
+    .btn:last-of-type {
+      margin-right: 0;
+    } } 
 
 .article {
   display: -webkit-box;
