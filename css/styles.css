@@ -33,7 +33,13 @@ body {
   display: block;
   width: 100%;
   max-width: 1000px;
-  margin: 2.5rem auto; }
+  margin: 0 auto 2.5rem; }
+
+  .brand {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 2.5rem auto; }
 
 .toggle {
   display: none;
@@ -182,17 +188,8 @@ ol {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*padding: 16px 24px;*/
-    /*padding: 0px 24px 16px 24px;*/
     padding-bottom: 40px;
     color: #FFFFFF;
-  }
-
-  .logo {
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
   }
 
   .nav-links {
@@ -214,54 +211,32 @@ ol {
     border-bottom: 2px solid #796654;
   }
 
-  .menu-toggle {
-    display: none;
-    background: none;
-    border-bottom: 2px solid transparent;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Georgia', serif;
-    color: #FFFFFF;
-  }
-
-  .menu-toggle:hover {
-    border-bottom: 2px solid #796654;
-  }
-
   a.selected {
     border-bottom: 2px solid #796654;
   }
 
-
-  /* Mobile styles */
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 140px;
-      left: 0;
-      width: 100%;
-      padding: 40px 0;
-      border-top: 1px solid #796654;
-      background-color: #27201D;
-    }
-
-    .nav-links.show {
-      display: flex;
-    }
-
-    .nav-links a {
-      margin: 16px 0;
-      font-size: 1rem;
-      border; 1
-    }
-
-    .menu-toggle {
-      display: block;
-    }
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
+  
+  .main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:.5rem; /* adjust spacing between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+  }
+  
+  .main-nav li {
+    display: inline-flex;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+  }
+
